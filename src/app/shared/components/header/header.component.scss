@@ -1,22 +1,188 @@
-nav {
-    background-color: #ccc;
-    height: 100px;
-
-    ul {
-        margin:0;
-        padding: 0;
-        list-style:none;
-
-    }
-
-    li {
-        display:inline-block;
-        a {
-            display: block;
-            background-color: #ccc;
-            padding: 10px;
-            text-decoration: none;
-            color: #000;
-        }
-    }
+/*$flag-url: url('http://q-ec.bstatic.com/images/city/600x200/288/28849.jpg');
+$postcard-height: 200px;
+*{ box-sizing: border-box; }
+html{
+  font-size: 62.5%;
 }
+body {
+  font-size: 1.6rem;
+  font-family: sans-serif;
+}
+h1,h3{ margin: 10px 0; }
+
+.postcard {
+  background: $flag-url;
+  width: 600px;
+  height: $postcard-height;
+  padding: 10px;
+  &__titlebar{
+    background: rgba(black,.7);
+    color: white;
+    padding: 10px;
+    width: 45%;
+  }
+  &__title{
+    font-weight: 500;
+    font-size: 3.6rem;
+    small{
+      position: relative;
+      &::after{
+        content: url('http://q-ec.bstatic.com/static/img/flags/32/nl/dbd0955b45290e1b43744a40abb0e604945f4831.png');
+        position: absolute;
+        top: 5px;
+        left: 8px;
+      }
+    }
+  }
+}
+.copy{
+  float: right;
+  margin-top: 30px;
+  color: white;
+}
+*/
+/* Some example SCSS 
+// OUTRO TESTE
+@import "compass/css3";
+$variable: #333;
+
+$blue: #3bbfce;
+$margin: 16px;
+
+.content-navigation {
+  #nested {
+    background-color: black;
+  }
+  border-color: $blue;
+  color:
+    darken($blue, 9%);
+}
+
+.border {
+  padding: $margin / 2;
+  margin: $margin / 2;
+  border-color: $blue;
+}
+
+@mixin table-base {
+  th {
+    text-align: center;
+    font-weight: bold;
+  }
+  td, th {padding: 2px}
+}
+
+table.hl {
+  margin: 2em 0;
+  td.ln {
+    text-align: right;
+  }
+}
+
+li {
+  font: {
+    family: serif;
+    weight: bold;
+    size: 1.2em;
+  }
+}
+
+@mixin left($dist) {
+  float: left;
+  margin-left: $dist;
+}
+
+#data {
+  @include left(10px);
+  @include table-base;
+}
+
+.source {
+  @include flow-into(target);
+  border: 10px solid green;
+  margin: 20px;
+  width: 200px; }
+
+.new-container {
+  @include flow-from(target);
+  border: 10px solid red;
+  margin: 20px;
+  width: 200px; }
+
+body {
+  margin: 0;
+  padding: 3em 6em;
+  font-family: tahoma, arial, sans-serif;
+  color: #000;
+}
+
+@mixin yellow() {
+  background: yellow;
+}
+
+.big {
+  font-size: 14px;
+}
+
+.nested {
+  @include border-radius(3px);
+  @extend .big;
+  p {
+    background: whitesmoke;
+    a {
+      color: red;
+    }
+  }
+}
+
+#navigation a {
+  font-weight: bold;
+  text-decoration: none !important;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.7em;
+}
+
+h1:before, h2:before {
+  content: "::";
+}
+
+code {
+  font-family: courier, monospace;
+  font-size: 80%;
+  color: #418A8A;
+}
+*/
+
+        div {
+            background-color: aqua;
+
+            h1 {
+                color: blue;
+            }
+            p {
+                font-size: 50px;
+                align-items: center;
+                color: brown;
+                display: flex;
+            }
+        }
+
+        header {
+            h1{
+                color: cadetblue;
+                align-items: center;
+                justify-content: center;
+                padding: 17px;
+            }
+            img {
+                width: 200px;
+                height: 200px;
+                border-radius: 50px;
+            }
+        }
